@@ -13,3 +13,5 @@
 node_modules/
 
 /dist
+
+fb_sdk_key.json

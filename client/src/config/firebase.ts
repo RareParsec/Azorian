@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 var firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.PROJECT_ID + ".firebaseapp.com",
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.PROJECT_ID + ".firebasestorage.app",
-  messagingSenderId: process.env.SENDER_ID,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEASUREMENT_ID,
+  apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_PROJECT_ID + ".firebaseapp.com",
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_PROJECT_ID + ".firebasestorage.app",
+  messagingSenderId: process.env.NEXT_PUBLIC_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);

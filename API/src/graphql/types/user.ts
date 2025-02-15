@@ -1,16 +1,16 @@
 const user = `#graphql
     type User {
-        id: ID!
         username: String!
         email: String!
     }
 
     type Query {
-        users: [User!]
+    users: [User!]
     }
 
     type Mutation {
         createUser(username: String!, email: String!): User!
+        handleEmailConflict(email: String!): Response!
     }
 `;
 
